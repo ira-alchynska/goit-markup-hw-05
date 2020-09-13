@@ -201,6 +201,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--active);
 }
 
+
  .contacts:not(:last-child) {
   margin-right: 50px;
 }
@@ -428,8 +429,10 @@ border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   
-}
+  
 .social-icon-item .social-icon-link:hover .social-icon,
 .social-icon-item .social-icon-link:focus .social-icon,
 .social-icon-item .social-icon-link:hover,
@@ -442,6 +445,7 @@ border-radius: 0px 0px 4px 4px;
   width: 20px;
   height: 20px;
   fill: var(--social-icon);
+  
 }
 
 /*Постоянные клиенты*/
@@ -471,8 +475,8 @@ display: flex;
    fill: var(--social-icon);
   border: 1px solid var(--social-icon);
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 2000ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item .clients-link:hover .clients-icon,
@@ -685,8 +689,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio {
+  
   width: calc((100% - 30px * 2) / 3);
   background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
 }
 
 .portfolio-link {
@@ -784,7 +791,8 @@ transform: translate(0%, 0%) scale(0) rotateX(0deg);
  min-height: 581px;
  min-width: 528px;
   background-color: var(--white);
- 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 .is-hidden .modal {
   
